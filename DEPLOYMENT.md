@@ -29,13 +29,11 @@ git push -u origin main
 # Log in (create a free account at hub.docker.com first)
 docker login
 
-# Build for the standard linux/amd64 platform most hosts use
-docker build --platform linux/amd64 -t yash564/inventory-backend:latest ./backend
-
-docker push yash564/inventory-backend:latest
+# Build for the standard linux/amd64 platform most hosts use, then push
+docker buildx build --platform linux/amd64 -t yashk2700/inventory-backend:latest --push ./backend
 ```
 
-Your image link: `https://hub.docker.com/r/yash564/inventory-backend`
+Your image link: https://hub.docker.com/r/yashk2700/inventory-backend
 
 ---
 

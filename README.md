@@ -213,8 +213,15 @@ The app is designed for free hosting tiers. See
 
 | Deliverable            | Link |
 |------------------------|------|
-| GitHub repository      | `https://github.com/yash564/inventory-order-system` |
-| Docker Hub (backend)   | `https://hub.docker.com/r/yash564/inventory-backend` |
-| Live frontend URL      | _add after deploying to Vercel_ |
-| Live backend API URL   | _add after deploying to Render_ |
+| GitHub repository      | https://github.com/yash564/inventory-order-system |
+| Docker Hub (backend)   | https://hub.docker.com/r/yashk2700/inventory-backend |
+| Live frontend URL      | https://inventory-order-system-sable.vercel.app |
+| Live backend API URL   | https://inventory-backend-gi6h.onrender.com |
+
+Pull & run the backend image directly:
+
+```bash
+docker pull yashk2700/inventory-backend:latest
+docker run -p 8000:8000 -e DATABASE_URL=<your-postgres-url> yashk2700/inventory-backend:latest
+```
 ```
